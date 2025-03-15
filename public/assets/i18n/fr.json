@@ -1,0 +1,9 @@
+{
+	"title": "Mon CV",
+	"name": "Nom",
+	"age": "Âge",
+	"skills": "Compétences",
+	"experience": "Expérience",
+	"languages": "Langues",
+	"changeLanguage": "Changer de langue"
+}

@@ -1,0 +1,39 @@
+.cv-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+
+  h1 {
+    color: #2C3E50;
+    text-align: center;
+  }
+
+  h3 {
+    color: #34495E;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    background-color: #ECF0F1;
+    margin: 5px 0;
+    padding: 5px;
+  }
+
+  button {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #2980B9;
+    }
+  }
+}

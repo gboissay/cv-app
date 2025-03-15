@@ -1,0 +1,24 @@
+<div class="cv-container">
+  <h1>{{ 'title' | translate }}</h1>
+  <p>{{ 'name' | translate }}: John Doe</p>
+  <p>{{ 'age' | translate }}: 30</p>
+
+  <h3>{{ 'skills' | translate }}</h3>
+  <ul>
+    <li>Développement Frontend</li>
+    <li>Angular</li>
+    <li>SCSS/CSS</li>
+  </ul>
+
+  <h3>{{ 'experience' | translate }}</h3>
+  <p>5 ans d'expérience dans le développement web.</p>
+
+  <h3>{{ 'languages' | translate }}</h3>
+  <ul>
+    <li>Français (natif)</li>
+    <li>Anglais (courant)</li>
+  </ul>
+
+  <button (click)="switchLanguage('fr')">{{ 'changeLanguage' | translate }} (FR)</button>
+  <button (click)="switchLanguage('en')">{{ 'changeLanguage' | translate }} (EN)</button>
+</div>
