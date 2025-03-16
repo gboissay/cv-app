@@ -1,9 +1,36 @@
 {
-	"title": "Mon CV",
+	"title": "Gwenael Boissay",
 	"name": "Nom",
 	"age": "Âge",
 	"skills": "Compétences",
 	"experience": "Expérience",
 	"languages": "Langues",
-	"changeLanguage": "Changer de langue"
+	"changeLanguage": "Changer de langue",
+	"header": {
+		"email-contact": "Me contacter par email",
+    "download": "Télécharger en PDF",
+    "switch-lang": {
+      "fr": "Français",
+      "en": "Anglais"
+    }
+	},
+  "nav-menu": {
+    "profile": "Profil",
+    "skills": "Compétences",
+    "work-xp": "Expériences professionnelles",
+    "projects": "Réalisations et projets",
+    "education": "Formations",
+    "languages": "Langues",
+    "interests": "Centres d'intérêt"
+  },
+  "resume": {
+    "summary": {
+      "details": {
+        "age": "ans"
+      },
+      "contact": {
+        "title": "Me contacter"
+      }
+    }
+  }
 }

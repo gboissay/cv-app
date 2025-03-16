@@ -22,6 +22,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     TranslateModule.forRoot({
+      defaultLanguage: 'fr',
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,
@@ -29,6 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     })
   ],
+  exports: [TranslateModule],
   providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent]
 })

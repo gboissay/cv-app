@@ -1,24 +1,69 @@
-<div class="cv-container">
-  <h1>{{ 'title' | translate }}</h1>
-  <p>{{ 'name' | translate }}: John Doe</p>
-  <p>{{ 'age' | translate }}: 30</p>
-
-  <h3>{{ 'skills' | translate }}</h3>
-  <ul>
-    <li>Développement Frontend</li>
-    <li>Angular</li>
-    <li>SCSS/CSS</li>
-  </ul>
-
-  <h3>{{ 'experience' | translate }}</h3>
-  <p>5 ans d'expérience dans le développement web.</p>
-
-  <h3>{{ 'languages' | translate }}</h3>
-  <ul>
-    <li>Français (natif)</li>
-    <li>Anglais (courant)</li>
-  </ul>
-
-  <button (click)="switchLanguage('fr')">{{ 'changeLanguage' | translate }} (FR)</button>
-  <button (click)="switchLanguage('en')">{{ 'changeLanguage' | translate }} (EN)</button>
+<div id="wrapper">
+  <div id="header">
+    <span id="actions">
+      <a id="email" class="action i18nattribute" [title]="'header.email-contact' | translate"><i
+          class="fa-solid fa-at"></i>&nbsp;gwenael.boissay&#64;gmail.com</a>
+      <a id="download" class="action i18nattribute" [title]="'header.download' | translate"
+        href="/files/resume-gwenael-boissay-en.pdf" download="gwenael-boissay.pdf"><i
+          class="fa-solid fa-download"></i></a>
+    </span>
+    <span id="langs">
+      <button class="langSelector i18nattribute" [title]="'header.switch-lang.fr' | translate" name="fr" (click)="switchLanguage('fr')"></button>
+      <button class="langSelector i18nattribute" [title]="'header.switch-lang.en' | translate" name="en" (click)="switchLanguage('en')"></button>
+    </span>
+  </div>
+  <nav id="nav-menu" role="navigation">
+    <a class="inverse i18nattribute" href="#details" [title]="'nav-menu.profile' | translate"><i
+        class="fa-solid fa-address-card"></i></a>
+    <a class="i18nattribute" href="#skills" [title]="'nav-menu.skills' | translate"><i
+        class="fa-solid fa-user-gear"></i></a>
+    <a class="inverse i18nattribute" href="#work" [title]="'nav-menu.work-xp' | translate"><i
+        class="fa-solid fa-briefcase"></i></a>
+    <a class="i18nattribute" href="#projects" [title]="'nav-menu.projects' | translate"><i
+        class="fa-solid fa-play"></i></a>
+    <a class="inverse i18nattribute" href="#education" [title]="'nav-menu.education' | translate"><i
+        class="fa-solid fa-graduation-cap"></i></a>
+    <a class="i18nattribute" href="#languages" [title]="'nav-menu.languages' | translate"><i
+        class="fa-solid fa-comment"></i></a>
+    <a class="inverse i18nattribute" href="#interests" [title]="'nav-menu.interests' | translate"><i
+        class="fa-solid fa-eye"></i></a>
+  </nav>
+  <div id="resume">
+    <div id="summary">
+      <div id="profile">
+        <img class="avatar" src="./assets/images/profil.jpg" />
+        <div id="location" class="location"><i class="fa-solid fa-location-dot"></i>&nbsp;Blois, France</div>
+      </div>
+      <div id="details">
+        <h1 id="name">Gwenael Boissay</h1>
+        <div id="time">
+          <div id="age"><i class="fa-solid fa-cake-candles"></i><span id="ageNum">39</span>&nbsp;<span class="i18nelement" translate>resume.summary.details.age</span></div>
+          <div id="xp"><i class="fa-solid fa-stopwatch"></i><span id="xpNum">12</span> <span data-i18n="xp-years"
+              class="i18nelement">years of experience</span></div>
+        </div>
+        <div id="jobTitle" data-i18n="title" class="i18nelement">Software <b>developer</b>, <b>Architect</b>,
+          <b>Technical Director</b> at <b><a href='https://twitter.com/WorldlineFrance'>Worldline</a></b></div>
+        <p id="description" data-i18n="description" class="i18nelement">Experienced <b>full-stack developer</b> and
+          software <b>architect</b>. I am <b>rigorous</b>, <b>pragmatism</b> and commited to the principles of
+          <b>software craftsmanship</b>. I like working in a <b>team</b>, with <b>motivated and passionate</b> people. I
+          like <b>learning</b> from people, <b>sharing</b>, <b>leading</b>, <b>discussing</b> technologies, designs,
+          architectures, etc. I try to maintain a <b>balance</b> between development and technical management.</p>
+      </div>
+      <div id="contact">
+        <h2 id="contactMe" class="title"><span class="label"><i class="fa-solid fa-circle-user"></i>&nbsp;<span class="i18nelement" translate>resume.summary.contact.title</span></span></h2>
+        <ul class="inline-list flex-list">
+          <li class="email list-item"><a href="mailto:gwenael.boissay@gmail.com" title="mail" target="new"><i
+                class="fa-solid fa-envelope"></i></a><span class="social-link">gwenael.boissay&#64;gmail.com</span></li>
+          <li class="phone list-item"><i class="fa-solid fa-phone"></i><span class="social-link">06 42 19 34 18</span></li>
+          <li class="website list-item"><a href="https://gboissay.github.io" title="personal website" target="new"><i
+                class="fa-solid fa-globe"></i></a><span class="social-link">https://gboissay.github.io</span></li>
+          <li class="github list-item"><a href="https://github.com/gboissay" title="@gboissay on GitHub" target="new"><i
+                class="fa-brands fa-github"></i></a><span class="social-link">gboissay</span></li>
+          <li class="linkedin list-item"><a href="https://www.linkedin.com/in/gwenael-boissay-48930085/"
+              title="Gwenael Boissay on LinkedIn" target="new"><i class="fa-brands fa-linkedin"></i></a><span
+              class="social-link">gwenael-boissay-48930085</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
